@@ -6,12 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class JenkinsApplication extends SpringBootServletInitializer {
+public class JenkinsApplication  {
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(JenkinsApplication.class);
-    }
+	/*
+	 * @Override protected SpringApplicationBuilder
+	 * configure(SpringApplicationBuilder application) { return
+	 * application.sources(JenkinsApplication.class); }
+	 */
 
     public static void main(String[] args) {
         SpringApplication.run(JenkinsApplication.class, args);
